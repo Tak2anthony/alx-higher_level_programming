@@ -1,7 +1,5 @@
- #!/usr/bin/python3
-def uppercase(str):
-    for i in str:
-        if ord(i) >= ord('a') and ord(i) <= ord('z'):
-            i = chr(ord(i) - 32)
-    print("{:s}".format(i), end="")
-    print()
+#!/usr/bin/env python3
+uppercase = __import__('8-uppercase').uppercase
+
+uppercase("holberton")
+uppercase("Holberton Scholl 98 Battery street")
